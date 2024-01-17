@@ -1,0 +1,70 @@
+
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+  }
+  
+  #gallery {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  figure {
+    text-align: center;
+  }
+  
+  figure img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    filter: grayscale(0%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  figcaption {
+    font-style: italic;
+    color: #666;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+  
+  li img {
+    width: 100px;
+    height: 67px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease-in-out;
+  }
+  
+  li img.active {
+    filter: grayscale(0%);
+  }
+  
+  li img:hover {
+    border-color: #555;
+    filter: grayscale(0%);
+  }
